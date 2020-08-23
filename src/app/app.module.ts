@@ -10,6 +10,8 @@ import { WaiverCheckinComponent as WaiverCheckinComponent } from './app-componen
 import { SiteInfoComponent as SiteInfoComponent } from './app-components/site-info-component/site-info.component';
 import { MembersComponent as MembersComponent } from './app-components/members-component/members.component';
 import { LinksComponent } from './app-components/links-component/links.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './app-modules/material/material.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { LinksComponent } from './app-components/links-component/links.component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
