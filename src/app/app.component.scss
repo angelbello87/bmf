@@ -1,0 +1,25 @@
+.navegationBar
+{
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 0.5em;
+}
+
+.navlink
+{
+    padding: 1em;
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+    font-weight: bold;
+    background-color: cornsilk;
+    text-decoration: none;
+}
+
+@media screen and (max-width:1000px)
+{
+    .navlink
+    {
+        padding: 0em;
+    }
+}

@@ -1,1 +1,14 @@
-<router-outlet></router-outlet>
+<div >
+    <img class="headerimage" src="../assets/BMFhead.jpg">
+</div>
+<div class="navegationBar">
+    <a class="navlink" [routerLink]="'/home'">Home</a>
+    <a class="navlink" [routerLink]="'/membership'">Membership</a>
+    <a class="navlink" [routerLink]="'/donations'">Donations</a>
+    <a class="navlink" [routerLink]="'/sitecheckin'">Site Checkin</a>
+    <a class="navlink" [routerLink]="'/members'">Members</a>
+    <a class="navlink" [routerLink]="'/links'">Links</a>
+</div>
+<router-outlet>
+    
+</router-outlet>
