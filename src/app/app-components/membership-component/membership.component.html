@@ -1,4 +1,35 @@
 <mat-card>
-    <mat-card-title>here will go the membership form
-    </mat-card-title>
+    <mat-card-title>Become a Member!</mat-card-title>
+    <mat-card-subtitle> Renew your Membership!</mat-card-subtitle>
+    <mat-card-content>
+        <div>
+            <mat-form-field >
+                <input matInput placeholder="Name" value="" required>       
+            </mat-form-field>
+            <br>
+            <mat-form-field >
+                <input matInput placeholder="Ushpa# if you have one" value="" >
+            </mat-form-field>
+
+            
+            <div style="text-align: left;">
+                <mat-radio-group color="primary" aria-label="Select an option">                    
+                    <mat-radio-button value="60">Regular Member <b>$60/year</b></mat-radio-button><br/>
+                    <mat-radio-button value="100" checked >Supporting Member <b>$100/year</b></mat-radio-button><br/>              
+                    <mat-radio-button value="50">Observer/Mentor Member <b>$50/year</b></mat-radio-button><br/>                
+                    <mat-radio-button value="40">Instructor Member <b>$40/year</b></mat-radio-button><br/>                
+                    <mat-radio-button value="30">Student Member <b>$30/year</b></mat-radio-button><br/>                
+                    <mat-radio-button value="20">30-Day Membership <b>$20/year</b></mat-radio-button><br/>                
+                </mat-radio-group>
+            </div>
+        </div>
+        <br>
+        <div>
+            <p>All Members have voting privileges for 12 months except:</p>
+            <p>30-Day Membership is non-voting and expires after 30 days.</p>
+            <p>Memberships are considered Donations and are not manditory. They help us keep our sites open and safe and are greatly appreciated.</p>
+            <p>Mandatory Daily Site <a [routerLink]="'/sitecheckin'" >Check-In.</a></p>
+        </div>
+       
+    </mat-card-content>
 </mat-card>
