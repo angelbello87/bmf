@@ -1,14 +1,25 @@
 <div >
     <img class="headerimage" src="../assets/BMFhead.jpg">
 </div>
+<div class="headerContainer">
 <div class="navegationBar">
-    <a class="navlink" [routerLink]="'/home'">Home</a>
-    <a class="navlink" [routerLink]="'/membership'">Membership</a>
+<button mat-button [matMenuTriggerFor]="menu"><mat-icon>menu</mat-icon>Menu</button>
+    <mat-menu #menu="matMenu">
+        <a  mat-menu-item [routerLink]="'/home'">Home</a>
+        <a  mat-menu-item [routerLink]="'/membership'">Membership</a>
+        <a  mat-menu-item [routerLink]="'/sitecheckin'">Site Checkin</a>
+        <a  mat-menu-item [routerLink]="'/donations'">Donations</a>    
+        <a  mat-menu-item [routerLink]="'/siteinfo'">Site Info</a>
+        <a  mat-menu-item [routerLink]="'/members'">Members</a>
+        <a mat-menu-item [routerLink]="'/links'">Links</a>
+    </mat-menu>
+</div>
+  
+<div class="callToAction">
     <a class="navlink" [routerLink]="'/donations'">Donations</a>
     <a class="navlink" [routerLink]="'/sitecheckin'">Site Checkin</a>
-    <a class="navlink" [routerLink]="'/siteinfo'">Site Info</a>
-    <a class="navlink" [routerLink]="'/members'">Members</a>
-    <a class="navlink" [routerLink]="'/links'">Links</a>
+</div>
+<div id="clear"></div>
 </div>
 <router-outlet>
     

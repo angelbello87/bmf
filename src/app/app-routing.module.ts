@@ -6,6 +6,7 @@ import { DonationsComponent } from './app-components/donations-component/donatio
 import { WaiverCheckinComponent } from './app-components/waiver-checkin-component/waiver-checkin.component';
 import { LinksComponent } from './app-components/links-component/links.component';
 import { MembershipComponent } from './app-components/membership-component/membership.component';
+import { SiteInfoComponent } from './app-components/site-info-component/site-info.component';
 
 
 const routes: Routes = [
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path:"membership", component:MembershipComponent},
   { path:"donations", component:DonationsComponent},
   { path:"sitecheckin", component:WaiverCheckinComponent},
+  { path:"siteinfo", component:SiteInfoComponent},
   { path:"members", component:MembersComponent},
   { path:"links", component:LinksComponent},
   { path: "**", pathMatch: 'full', redirectTo:'home'},

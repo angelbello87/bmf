@@ -1,25 +1,61 @@
-.navegationBar
+.headerContainer
 {
-    align-items: center;
-    text-align: center;
-    width: 100%;
+    margin: auto;
+}
+.navegationBar
+{  
+    float: left;  
+    text-align: left;
+    width: 30%;
     padding: 0.5em;
+}
+
+.callToAction
+{
+    text-align: right;
+    float: right;    
+    padding: 0.5em;
+}
+
+#clear
+{
+    clear: both;
 }
 
 .navlink
 {
-    padding: 1em;
-    margin-left: 0.1em;
-    margin-right: 0.1em;
-    font-weight: bold;
-    background-color: cornsilk;
+    box-sizing: border-box;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;    
+    outline: none;
+    border: none;
+    -webkit-tap-highlight-color: transparent;
+    display: inline-block;
+    white-space: nowrap;
     text-decoration: none;
+    vertical-align: baseline;
+    text-align: center;
+    margin: 0;
+    min-width: 64px;
+    line-height: 36px;
+    padding: 0 16px;
+    border-radius: 4px;
+    overflow: visible;
+    color: inherit;
+    background: cornsilk;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 5px;
 }
 
 @media screen and (max-width:1000px)
 {
     .navlink
     {
-        padding: 0em;
+        padding: 0px 16px;
     }
 }
