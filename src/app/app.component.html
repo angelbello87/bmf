@@ -1,5 +1,5 @@
 <div >
-    <img class="headerimage" src="../assets/BMFhead.jpg">
+    <a routerLink="'/home'"><img class="headerimage" src="../assets/BMFhead.jpg"></a>
 </div>
 <div class="headerContainer">
 <div class="navegationBar">
@@ -16,8 +16,8 @@
 </div>
   
 <div class="callToAction">
-    <a class="navlink" [routerLink]="'/donations'">Donations</a>
-    <a class="navlink" [routerLink]="'/sitecheckin'">Site Checkin</a>
+    <a class="navlink" mat-raised-button [routerLink]="'/donations'">Donations</a>
+    <a class="navlink" mat-raised-button [routerLink]="'/membership'">Membership</a>
 </div>
 <div id="clear"></div>
 </div>
@@ -25,4 +25,4 @@
     
 </router-outlet>
 
-<p>Copy right - Buffalo Mountain Flyers 2020-2021</p>
+<p>Copyright - Buffalo Mountain Flyers 2020-2021</p>
