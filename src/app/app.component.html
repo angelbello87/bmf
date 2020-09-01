@@ -1,25 +1,26 @@
+
+<div class="headerContainer">
+    <div class="navegationBar">
+    <button mat-button [matMenuTriggerFor]="menu"><mat-icon>menu</mat-icon>Menu</button>
+        <mat-menu #menu="matMenu">
+            <a  mat-menu-item [routerLink]="'/home'">Home</a>
+            <a  mat-menu-item [routerLink]="'/membership'">Membership</a>
+            <a  mat-menu-item [routerLink]="'/sitecheckin'">Site Checkin</a>
+            <a  mat-menu-item [routerLink]="'/donations'">Donations</a>    
+            <a  mat-menu-item [routerLink]="'/siteinfo'">Site Info</a>
+            <a  mat-menu-item [routerLink]="'/members'">Members</a>
+            <a mat-menu-item [routerLink]="'/links'">Links</a>
+        </mat-menu>
+    </div>
+  
+    <div class="callToAction">
+        <a class="navlink" mat-raised-button [routerLink]="'/donations'">Donations</a>
+        <a class="navlink" mat-raised-button [routerLink]="'/membership'">Membership</a>
+    </div>
+<div id="clear"></div>
+</div>
 <div >
     <a routerLink="'/home'"><img class="headerimage" src="../assets/BMFhead.jpg"></a>
-</div>
-<div class="headerContainer">
-<div class="navegationBar">
-<button mat-button [matMenuTriggerFor]="menu"><mat-icon>menu</mat-icon>Menu</button>
-    <mat-menu #menu="matMenu">
-        <a  mat-menu-item [routerLink]="'/home'">Home</a>
-        <a  mat-menu-item [routerLink]="'/membership'">Membership</a>
-        <a  mat-menu-item [routerLink]="'/sitecheckin'">Site Checkin</a>
-        <a  mat-menu-item [routerLink]="'/donations'">Donations</a>    
-        <a  mat-menu-item [routerLink]="'/siteinfo'">Site Info</a>
-        <a  mat-menu-item [routerLink]="'/members'">Members</a>
-        <a mat-menu-item [routerLink]="'/links'">Links</a>
-    </mat-menu>
-</div>
-  
-<div class="callToAction">
-    <a class="navlink" mat-raised-button [routerLink]="'/donations'">Donations</a>
-    <a class="navlink" mat-raised-button [routerLink]="'/membership'">Membership</a>
-</div>
-<div id="clear"></div>
 </div>
 <router-outlet>
     

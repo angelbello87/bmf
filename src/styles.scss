@@ -1,15 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
 .bodydimention
 {
-    text-align: center;
-    /*max-width: 1200px;    */
+    text-align: center;    
+    max-width: 1024px;
+    margin: auto;
+    //background-color: lightskyblue;
 }
+
 @media screen and (max-width:1000px)
 {
     .headerimage
     {
         width: 100%;
+        margin-top:51px;
     }
+}
+
+.headerimage
+{    
+    margin-top:51px;
 }
 
 html, body { height: 100%; }
